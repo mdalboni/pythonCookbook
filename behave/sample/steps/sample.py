@@ -14,7 +14,7 @@ register_type(Number=parse_number)
 
 @step('fetch data from "{url}"')
 def fetch_url_data(context: Context, url: str):
-    response = get(url)
+    response = get(url, timeout=60)
     context.response = response
 
 

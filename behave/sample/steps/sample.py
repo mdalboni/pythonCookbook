@@ -1,7 +1,7 @@
 import parse
 from behave import step, register_type
 from behave.runner import Context
-from requests import get
+from security.safe_requests import get
 
 
 @parse.with_pattern(r"\d+")
